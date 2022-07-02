@@ -19,12 +19,13 @@ app.on('activate', () => {
 
     return (
         <>
-            <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
+            {/* <SyntaxHighlighter language="javascript" style={vscDarkPlus}>
                 {code}
-            </SyntaxHighlighter>
-            {/* <Form className="editor-form">
-                <Form.Control className="editor-form" as="textarea" placeholder="Type your code here..." />
-            </Form> */}
+            </SyntaxHighlighter> */}
+
+            <Form className="editor-form">
+                <Form.Control className="editor-form editor-code" as="textarea" placeholder="Type your code here..." />
+            </Form>
         </>
     );
 }
